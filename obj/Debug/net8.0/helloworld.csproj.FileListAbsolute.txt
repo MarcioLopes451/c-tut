@@ -1,0 +1,14 @@
+/Users/marciochopbala/Desktop/c# tut/helloworld/obj/Debug/net8.0/helloworld.GeneratedMSBuildEditorConfig.editorconfig
+/Users/marciochopbala/Desktop/c# tut/helloworld/obj/Debug/net8.0/helloworld.AssemblyInfoInputs.cache
+/Users/marciochopbala/Desktop/c# tut/helloworld/obj/Debug/net8.0/helloworld.AssemblyInfo.cs
+/Users/marciochopbala/Desktop/c# tut/helloworld/obj/Debug/net8.0/helloworld.csproj.CoreCompileInputs.cache
+/Users/marciochopbala/Desktop/c# tut/helloworld/bin/Debug/net8.0/helloworld
+/Users/marciochopbala/Desktop/c# tut/helloworld/bin/Debug/net8.0/helloworld.deps.json
+/Users/marciochopbala/Desktop/c# tut/helloworld/bin/Debug/net8.0/helloworld.runtimeconfig.json
+/Users/marciochopbala/Desktop/c# tut/helloworld/bin/Debug/net8.0/helloworld.dll
+/Users/marciochopbala/Desktop/c# tut/helloworld/bin/Debug/net8.0/helloworld.pdb
+/Users/marciochopbala/Desktop/c# tut/helloworld/obj/Debug/net8.0/helloworld.dll
+/Users/marciochopbala/Desktop/c# tut/helloworld/obj/Debug/net8.0/refint/helloworld.dll
+/Users/marciochopbala/Desktop/c# tut/helloworld/obj/Debug/net8.0/helloworld.pdb
+/Users/marciochopbala/Desktop/c# tut/helloworld/obj/Debug/net8.0/helloworld.genruntimeconfig.cache
+/Users/marciochopbala/Desktop/c# tut/helloworld/obj/Debug/net8.0/ref/helloworld.dll
