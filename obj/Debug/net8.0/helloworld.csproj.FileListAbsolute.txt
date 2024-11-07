@@ -12,3 +12,4 @@
 /Users/marciochopbala/Desktop/c# tut/helloworld/obj/Debug/net8.0/helloworld.pdb
 /Users/marciochopbala/Desktop/c# tut/helloworld/obj/Debug/net8.0/helloworld.genruntimeconfig.cache
 /Users/marciochopbala/Desktop/c# tut/helloworld/obj/Debug/net8.0/ref/helloworld.dll
+/Users/marciochopbala/Desktop/c# tut/helloworld/obj/Debug/net8.0/helloworld.sourcelink.json
