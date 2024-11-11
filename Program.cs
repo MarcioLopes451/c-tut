@@ -169,15 +169,35 @@ namespace Numbers
       // Time to Jupiter
       double journeyToJupiter = 6.142466;
 
-      // New Age on Earth
       double newEarthAge = userAge + journeyToJupiter;
-      // New Age on Jupiter
 
       double newJupiterAge = newEarthAge / jupiterYears;
-      // Log calculations to console
       Console.WriteLine(newEarthAge);
       Console.WriteLine(jupiterAge);
       Console.WriteLine(newJupiterAge);
+
+      int steps = 0;
+
+      // Two steps forward 
+      steps = steps += 2;
+
+      // One step back 
+      steps = steps -= 1;
+
+
+      // Print result to the console
+      Console.WriteLine(steps);
+
+      // Number of students
+      int students = 18;
+
+
+      // Number of students in a group
+      int groupSize = 3;
+
+
+      // Does groupSize go evenly into students?
+      Console.WriteLine(students % groupSize);
 
     }
   }
