@@ -202,3 +202,32 @@ namespace Numbers
     }
   }
 }
+
+using System;
+
+namespace MoneyMaker
+{
+  class MainClass
+  {
+    public static void Main(string[] args)
+    {
+      Console.WriteLine("Welcome to Money Maker!");
+      Console.WriteLine("How many coins do you want to convert?");
+      string totalNumber = Console.ReadLine();
+      double number = Math.Floor(Convert.ToDouble(totalNumber));
+      Console.WriteLine($"{number} cents is equal to...");
+
+      int goldCoin = 10;
+      int silverCoin = 5;
+      int bronzeCoin = 1;
+      double goldCoins = Math.Floor(number / goldCoin);
+      double remainder = number % goldCoin;
+      double silverCoins = Math.Floor(number / silverCoin);
+      remainder = remainder % silverCoins;
+      double bronzeCoins = Math.Floor(number / bronzeCoin);
+      remainder = remainder % bronzeCoins;
+      Console.WriteLine($"Gold coins: {goldCoins}");
+      Console.WriteLine($"Silver coins: {silverCoins}");
+      Console.WriteLine($"Bronze coins: {bronzeCoins}");
+    }
+  }
