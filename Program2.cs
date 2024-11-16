@@ -266,3 +266,106 @@ namespace ChooseYourOwnAdventure
     }
   }
 }
+
+
+// arrays 
+
+using System;
+
+namespace BuildingArrays
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+
+      string[] summerStrut;
+      summerStrut = new string[] { "Juice", "Missing U", "674", "410", "86", "Harlem", "150", "WossipDrive" };
+      int[] ratings = { 1, 2, 3, 4, 5, 1, 2, 4 };
+
+      string[] summerStrut;
+
+      summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito" };
+
+      if (summerStrut.Length == 8)
+      {
+        Console.WriteLine("summerStrut Playlist is ready to go!");
+      }
+      else if (summerStrut.Length > 8)
+      {
+        Console.WriteLine("Too many songs!");
+      }
+      else
+      {
+        Console.WriteLine("Add some songs!");
+      }
+
+      string[] summerStrut;
+
+      summerStrut = new string[] { "Juice", "Missing U", "Raspberry Beret", "New York Groove", "Make Me Feel", "Rebel Rebel", "Despacito", "Los Angeles" };
+
+      int[] ratings = { 5, 4, 4, 3, 3, 5, 5, 4 };
+
+      Console.WriteLine($"You rated {summerStrut[1]} {ratings[1]}.");
+
+      summerStrut[7] = "hello kitty";
+      ratings[7] = 5;
+
+      int index = Array.IndexOf(ratings, 3);
+      Console.WriteLine($"Song number {index + 1} is rated three stars.");
+
+      Array.Reverse(summerStrut);
+      Console.WriteLine($"first song is {summerStrut[0]} and last song is {summerStrut[7]}");
+
+      Array.Sort(summerStrut);
+      Console.WriteLine($"first song is {summerStrut[0]} and last song is {summerStrut[7]}");
+
+    }
+  }
+}
+
+// array project 
+
+using System;
+
+namespace SpaceMission
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // Your code goes here
+      string[] spaceInventory;
+      spaceInventory = new string[] { "Space Suits", "Oxygen Tanks", "Food Supplies", "Medical Kits", "Communication Devices", "Fuel Canisters", "Navigation Tools", "Repair Tools" };
+
+      int[] itemQuantities = { 10, 8, 15, 5, 6, 9, 4, 7 };
+
+      if (spaceInventory.Length == 8)
+      {
+        Console.WriteLine("Space Inventory is ready to go!");
+      }
+      else if (spaceInventory.Length > 8)
+      {
+        Console.WriteLine("Too many items!");
+      }
+      else
+      {
+        Console.WriteLine("Add more items!");
+      }
+      Console.WriteLine($"{spaceInventory[1]}, {itemQuantities[1]}");
+
+      spaceInventory[7] = "Scientific Instruments";
+      itemQuantities[7] = 5;
+
+      int inde = Array.IndexOf(itemQuantities, 5);
+      Console.WriteLine($"The first item with quantity 5 is at position {inde + 1}.");
+
+      Array.Reverse(spaceInventory);
+      Console.WriteLine($"first inventory is {spaceInventory[0]} and last inventory is {spaceInventory[7]}");
+
+      Array.Sort(spaceInventory);
+      Console.WriteLine($"first inventory is {spaceInventory[0]} and last inventory is {spaceInventory[7]}");
+
+    }
+  }
+}
