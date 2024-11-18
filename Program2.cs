@@ -369,3 +369,104 @@ namespace SpaceMission
     }
   }
 }
+
+// while loops
+
+using System;
+
+namespace WhileLoop
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int emails = 20;
+
+      while (emails > 0)
+      {
+        emails--;
+        Console.WriteLine($"deleted email, there is now {emails} left");
+      }
+
+      Console.WriteLine("inbox zero achieved");
+
+      bool buttonClick = true;
+
+      do
+      {
+        Console.WriteLine("Alarm ringing");
+
+      } while (!buttonClick);
+      Console.WriteLine("Time for a five minute break.");
+
+      for (int i = 1; i <= 16; i++)
+      {
+        Console.WriteLine($"Week {i}");
+        Console.WriteLine("Announcements: \n \n \n ");
+        Console.WriteLine("Report Backs: \n \n \n");
+        Console.WriteLine("Discussion Items: \n \n \n");
+      }
+
+      string[] todo = { "respond to email", "make wireframe", "program feature", "fix bugs" };
+      foreach (string todos in todo)
+      {
+        Console.WriteLine($"[]{todos}");
+      }
+
+      string[] websites = { "twitter", "facebook", "gmail" };
+
+      foreach (string website in websites)
+      {
+        Console.WriteLine(website);
+
+      }
+
+      bool buttonClick = false;
+      int count = 0;
+
+      do
+      {
+        Console.WriteLine("BLARRRRR");
+        count++;
+        if (count == 3)
+        {
+          break;
+        }
+
+
+      } while (!buttonClick);
+    }
+  }
+}
+
+// using System;
+
+namespace CaesarCipher
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      char[] alphabet = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
+
+      Console.WriteLine("encryption tool app");
+      string input = Console.ReadLine();
+      char[] secretMessage = input.ToCharArray();
+
+      char[] encryptedMessage = new char[secretMessage.Length];
+
+      for (int i = 0; i < secretMessage.Length; i++)
+      {
+        char encryptChar = secretMessage[i];
+        int alphabetIndex = Array.IndexOf(alphabet, encryptChar);
+
+        int secondEncryptChar = (alphabetIndex + 3) % alphabet.Length;
+        char newEncrypt = alphabet[secondEncryptChar];
+        secretMessage[i] = newEncrypt;
+
+        string msgString = String.Join("", secretMessage);
+        Console.WriteLine(msgString);
+      }
+    }
+  }
+}
