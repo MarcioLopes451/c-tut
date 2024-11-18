@@ -470,3 +470,91 @@ namespace CaesarCipher
     }
   }
 }
+
+// project
+using System;
+
+namespace TrueOrFalse
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // Do not edit these lines
+      Console.WriteLine("Welcome to 'True or False?'\nPress Enter to begin:");
+      string entry = Console.ReadLine();
+      Tools.SetUpInputStream(entry);
+
+      // Type your code below
+      string[] questions = new string[] { "am i 24?", "how tall are you?", "how many days?", "whats the riddle?" };
+
+      bool[] answers = new bool[] { true, false, false, true };
+      bool[] responses = new bool[questions.Length];
+
+      if (questions.Length != answers.Length)
+      {
+        Console.WriteLine("Warning...");
+      };
+
+      int askingIndex = 0;
+
+      foreach (string question in questions)
+      {
+        string input;
+        bool isBool;
+        bool inputBool;
+
+        Console.WriteLine(question);
+        Console.WriteLine("true or false?");
+        input = Console.ReadLine().ToLower();
+
+        if (input == "true" || input == "false")
+        {
+          isBool = true;
+        }
+        else
+        {
+          isBool = false;
+        }
+
+        while (isBool == false)
+        {
+          Console.WriteLine("Please respond with 'true' or 'false'");
+          input = Console.ReadLine().ToLower();
+
+          if (input == "true" || input == "false")
+          {
+            isBool = true;
+          };
+        };
+
+        if (input == "true")
+        {
+          inputBool = true;
+        }
+        else
+        {
+          inputBool = false;
+        }
+
+        responses[askingIndex] = inputBool;
+        askingIndex++;
+      }
+
+      int score = 0;
+      int scoringIndex = 0;
+
+      foreach (bool answer in answers)
+      {
+        bool res = responses[scoringIndex];
+        Console.WriteLine($"input: {res} | Answer: {answers[scoringIndex]}");
+        if (res == answers[scoringIndex])
+        {
+          score++;
+        };
+        scoringIndex++;
+      };
+      Console.WriteLine($"You got {score} out of {answers.Length} correct!");
+    }
+  }
+}
