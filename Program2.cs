@@ -558,3 +558,83 @@ namespace TrueOrFalse
     }
   }
 }
+
+using System;
+using System.Collections.Generic;
+
+namespace LearnLists
+{
+  class Program
+  {
+    static void Main()
+    {
+      List<double> marathons = new List<double>();
+
+      marathons.Add(144.07);
+      marathons.Add(143.12);
+      Console.WriteLine(marathons[1]);
+
+      List<double> marathons = new List<double> { 144.07, 143.12, 146.73, 146.33 };
+
+      // Do not delete the code below
+      double time = marathons[1];
+
+      Console.WriteLine($"The 2012 marathon was ran in {time} minutes!");
+
+      Console.WriteLine(marathons.Count);
+
+      marathons.Add(143.23);
+      Console.WriteLine(marathons.Contains(143.23));
+
+      Console.WriteLine(marathons.Count);
+
+      bool removed = marathons.Remove(143.12);
+
+      Console.WriteLine(marathons[1]);
+      Console.WriteLine(removed);
+
+      // Clear the list here
+      marathons.Clear();
+
+      // First loop
+      for (int i = 0; i < runners.Count; i++)
+      {
+        Console.WriteLine($"{i + 1}: {runners[i]}");
+      }
+
+      Console.WriteLine("\nPrinting runner bibs...");
+
+      // Second loop
+      foreach (string runner in runners)
+      {
+        string name = runner.ToUpper();
+        int id = rand.Next(100, 1000);
+        Console.WriteLine($"{id} - {name}");
+      }
+
+      List<double> topMarathons = marathons.GetRange(0, 3);
+
+      foreach (double marathon in topMarathons)
+      {
+        Console.WriteLine(marathon);
+      }
+    }
+  }
+}
+
+using System;
+using System.Collections.Generic;
+
+namespace LearnLists
+{
+  class Program
+  {
+    static void Main()
+    {
+      List<bool> b = new List<bool>();
+      List<Random> r = new List<Random>();
+      List<IServiceProvider> i = new List<IServiceProvider>();
+    }
+  }
+}
+
