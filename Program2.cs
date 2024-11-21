@@ -638,3 +638,51 @@ namespace LearnLists
   }
 }
 
+using System;
+using System.Collections.Generic;
+
+public class InventoryManagement
+{
+  public static void Main(string[] args)
+  {
+    // Your code goes here
+    List<string> inventoryList = new List<string>();
+
+    inventoryList.Add("Printer");
+    inventoryList.Add("Laptop");
+    inventoryList.Add("Desk Chair");
+    inventoryList.Add("Monitor");
+    inventoryList.Add("Keyboard");
+
+    Console.WriteLine(inventoryList.Count);
+
+    bool hasDeskChair = inventoryList.Contains("Desk Chair");
+    Console.WriteLine(hasDeskChair);
+
+    bool removed = inventoryList.Remove("Printer");
+    Console.WriteLine(removed);
+
+    foreach (string inventory in inventoryList)
+    {
+      Console.WriteLine(inventory);
+    }
+
+    List<string> newItems = new List<string> { "Mouse", "Desk Lamp" };
+
+    inventoryList.AddRange(newItems);
+
+    // Correctly remove the last two elements
+    if (inventoryList.Count >= 2)
+    {
+      inventoryList.RemoveRange(inventoryList.Count - 2, 2);
+    }
+
+    // Get the top two items
+    List<string> topInventory = inventoryList.GetRange(0, 2);
+
+    foreach (string inventory in topInventory)
+    {
+      Console.WriteLine(inventory);
+    }
+  }
+}
