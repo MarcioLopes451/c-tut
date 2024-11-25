@@ -181,3 +181,35 @@ namespace NamedArguments
   }
 }
 
+// projects
+
+using System;
+
+namespace ArchitectArithmetic
+{
+  class Program
+  {
+    public static void Main(string[] args)
+    {
+      double totalArea = Rec(2500, 1500) + Circles(375) + Tri(500, 750);
+
+      double flooringMats = Math.Round(totalArea * 180, 2);
+      Console.WriteLine($"the total cost for the flooring material is {flooringMats} mexican pesos.");
+    }
+
+    static double Rec(double length, double width)
+    {
+      return length * width;
+    }
+    static double Circles(double radius)
+    {
+      return Math.PI * Math.Pow(radius, 2);
+    }
+    static double Tri(double bottom, double height)
+    {
+      return 0.5 * bottom * height;
+    }
+
+  }
+}
+
